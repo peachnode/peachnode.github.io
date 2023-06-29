@@ -1,10 +1,20 @@
 <template>
-  <nav>
+  <nav v-if="showNavigationBar">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
   <router-view />
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      showNavigationBar: false,
+    };
+  },
+};
+</script>
 
 <style>
 #app {

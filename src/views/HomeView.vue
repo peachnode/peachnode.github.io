@@ -2,17 +2,26 @@
   <div class="home">
     <img alt="peach hub logo" src="../assets/logo.png" class="logo" />
     <HeadLine msg="Welcome to our website" />
+    <SubLine :msg="subLineMessage" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HeadLine from "@/components/HeadLine.vue"; // @ is an alias to /src
+import HeadLine from "@/components/HeadLine.vue";
+import SubLine from "@/components/SubLine.vue";
 
 export default defineComponent({
   name: "HomeView",
   components: {
     HeadLine,
+    SubLine,
+  },
+  data() {
+    return {
+      subLineMessage:
+        "Peach Hub ist ein Ort, an dem Studentinnen der Fakultät IV sich vernetzen und langfristige Beziehungen aufbauen können, uns gegenseitig unterstützen und uns zusammen für ein angenehmeres Klima für Studentinnen* an der Fakultät einsetzen.",
+    };
   },
 });
 </script>
