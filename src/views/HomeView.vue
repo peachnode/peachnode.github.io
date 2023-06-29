@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-    <img alt="peach hub logo" src="../assets/logo.png" class="logo" />
+    <img
+      alt="peach hub logo"
+      src="../assets/logo-transparent.png"
+      class="logo"
+    />
     <HeadLine msg="Welcome to our website" />
   </div>
 </template>
