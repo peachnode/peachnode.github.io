@@ -1,18 +1,25 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <img alt="peach hub logo" src="../assets/logo.png" class="logo" />
+    <HeadLine msg="Welcome to our website" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import HeadLine from "@/components/HeadLine.vue"; // @ is an alias to /src
 
 export default defineComponent({
   name: "HomeView",
   components: {
-    HelloWorld,
+    HeadLine,
   },
 });
 </script>
+
+<style scoped>
+.logo {
+  width: 500px; /* Set the width of the logo */
+  /*height: 100px; !* Set the height of the logo *!*/
+}
+</style>
