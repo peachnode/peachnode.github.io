@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="text-item">
     <h1>{{ msg }}</h1>
   </div>
 </template>
@@ -17,8 +17,10 @@ export default defineComponent({
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
+h1 {
   margin: 20px 0 0;
+  font-size: 20px;
+  font-family: "Quantico", sans-serif;
 }
 ul {
   list-style-type: none;
