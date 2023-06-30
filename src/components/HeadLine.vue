@@ -20,7 +20,9 @@ export default defineComponent({
 h1 {
   margin: 40px 0 0;
   font-family: "Quantico", sans-serif;
-  font-size: 40px;
+  font-size: 60px;
+  color: #ff886c;
+  padding-top: 40px;
 }
 ul {
   list-style-type: none;
@@ -29,8 +31,5 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>

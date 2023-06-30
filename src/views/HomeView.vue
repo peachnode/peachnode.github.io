@@ -6,8 +6,7 @@
         src="../assets/logo-transparent.png"
         class="logo"
       />
-      <HeadLine msg="Welcome to our website" />
-      <SubLine :msg="subLineMessage" />
+      <HeadLine :msg="headLineMessage" />
     </div>
   </div>
 </template>
@@ -15,18 +14,15 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import HeadLine from "@/components/HeadLine.vue";
-import SubLine from "@/components/SubLine.vue";
 
 export default defineComponent({
   name: "HomeView",
   components: {
     HeadLine,
-    SubLine,
   },
   data() {
     return {
-      subLineMessage:
-        "Peach Hub ist ein Ort, an dem Studentinnen der Fakultät IV sich vernetzen und langfristige Beziehungen aufbauen können, uns gegenseitig unterstützen und uns zusammen für ein angenehmeres Klima für Studentinnen* an der Fakultät einsetzen.",
+      headLineMessage: "WEBSITE COMING AUG 2023",
     };
   },
 });
@@ -36,23 +32,20 @@ export default defineComponent({
 .home {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
-  border: 2px solid #000;
 }
 
 .container {
-  width: 30vw;
+  width: 60vw;
   height: auto;
-  margin: 0 auto;
-  padding: 60px;
-  border: 2px solid #000;
 }
 
 .logo {
-  width: 100%; /* Set the maximum width of the logo to 100% of its container */
+  width: 40%; /* Set the maximum width of the logo to 100% of its container */
   height: auto; /* Allow the logo to scale proportionally */
-  /*transition: max-width 0.5s;*/
+  transition: max-width 0.5s;
+  padding-top: 40px;
 }
 
 @media screen and (max-width: 600px) {
