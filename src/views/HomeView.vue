@@ -38,13 +38,15 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   height: 100vh;
+  border: 2px solid #000;
 }
 
 .container {
   width: 30vw;
   height: auto;
   margin: 0 auto;
-  padding: 20px;
+  padding: 60px;
+  border: 2px solid #000;
 }
 
 .logo {
