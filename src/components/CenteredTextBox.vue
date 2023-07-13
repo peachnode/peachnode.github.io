@@ -26,7 +26,6 @@ export default {
   padding: 0;
   font-size: 35px;
   text-align: left;
-  overflow: hidden;
   transition: max-width 0.5s;
 }
 
